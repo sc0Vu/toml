@@ -1,9 +1,7 @@
 # toml: TOML array element cannot contain a table
-# Dotted keys are not supported yet.
-SKIP_ENCODE?=valid/inline-table-nest,valid/key-dotted
+SKIP_ENCODE?=valid/inline-table-nest
 
-# Dotted keys are not supported yet.
-SKIP_DECODE=valid/key-dotted
+SKIP_DECODE=
 
 # No easy way to see if this was a datetime or local datetime; we should extend
 # meta with new types for this, which seems like a good idea in any case.
